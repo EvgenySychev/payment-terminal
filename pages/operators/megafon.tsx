@@ -1,8 +1,10 @@
 import PaymentTerminal from '../../components/PaymentTerminal'
+import OperatorItem from '../../components/OperatorItem'
+import logoMegafon from '../../public/megafon.jpg';
 
 const MegafonPage = () => {
     return <>
-    <div>Megafon</div>
+        <OperatorItem title="" logo={logoMegafon}/>
         <PaymentTerminal/>
     </>
 }

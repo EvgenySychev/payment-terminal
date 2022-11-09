@@ -4,7 +4,6 @@ import HomePageReturnButton from '../../components/HomePageReturnButton'
 const PaymentError = () => {
 
     const router = useRouter()
-    console.log(router)
 
     const onHomePageReturn = () => {
         router.push('/')

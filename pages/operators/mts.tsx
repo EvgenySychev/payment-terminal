@@ -1,8 +1,10 @@
 import PaymentTerminal from '../../components/PaymentTerminal'
+import OperatorItem from '../../components/OperatorItem'
+import logoMts from '../../public/MTS.jpg';
 
 const MtsPage = () => {
     return <>
-    <div>MTS</div>
+        <OperatorItem title="" logo={logoMts}/>
         <PaymentTerminal/>
     </>
 }

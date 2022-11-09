@@ -15,9 +15,10 @@
     "formik": "^2.2.9",
     "next": "13.0.2",
     "react": "18.2.0",
-    "react-currency-input-field": "^3.6.9",
     "react-dom": "18.2.0",
+    "react-input-mask": "^2.0.4",
     "react-phone-input-2": "^2.15.1",
+    "styled-components": "^5.3.6",
     "typescript": "4.8.4"
   }
 }
