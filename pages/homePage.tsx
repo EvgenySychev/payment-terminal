@@ -1,9 +1,9 @@
-
+import Link from 'next/link'
 import OperatorItem from '../components/OperatorItem'
 
 type Operator = {
     id: number
-    title:string
+    title: string
 }
 
 const operatorsList: Array<Operator> = [
@@ -26,7 +26,9 @@ const HomePage = () => {
     return (
         <div>
             <h2>Выберете оператора</h2>
-            {operatorsList.map(t => <OperatorItem key={t.id} title={t.title}/>)}
+            {operatorsList.map(t => <Link href='/paymentPage'>
+                <OperatorItem key={t.id} title={t.title}/>
+            </Link>)}
         </div>
     )
 }

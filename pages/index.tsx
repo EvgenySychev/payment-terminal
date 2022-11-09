@@ -1,5 +1,7 @@
+import HomePage from './homePage'
+
 const Home = () => {
-    return <h1>'Hello word'</h1>
+    return <HomePage/>
 }
 
 export default Home;
