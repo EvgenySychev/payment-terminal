@@ -1,5 +1,7 @@
 import Link from 'next/link'
 
+import {useRouter} from "next/router";
+
 import {useFormik} from "formik";
 
 type FormikErrorType = {
@@ -8,6 +10,13 @@ type FormikErrorType = {
 }
 
 const PaymentTerminal = () => {
+
+    const router = useRouter()
+
+    const openResultPage = () => {
+        // router.push('/payment-result/success')
+        router.push('/payment-result/error')
+    }
 
     const formik = useFormik({
         initialValues: {
@@ -33,7 +42,7 @@ const PaymentTerminal = () => {
         },
         onSubmit: values => {
             formik.resetForm()
-            alert('оплачно')
+            openResultPage()
         }
     })
 
