@@ -4,20 +4,24 @@ import OperatorItem from '../components/OperatorItem'
 type Operator = {
     id: number
     title: string
+    path: string
 }
 
 const operatorsList: Array<Operator> = [
     {
         id: 1,
-        title: 'МТС'
+        title: 'МТС',
+        path: 'mts'
     },
     {
         id: 2,
-        title: 'Билайн'
+        title: 'Билайн',
+        path: 'beelain'
     },
     {
         id: 3,
-        title: 'Мегафон'
+        title: 'Мегафон',
+        path: 'megafon'
     }
 ]
 
@@ -26,9 +30,15 @@ const HomePage = () => {
     return (
         <div>
             <h2>Выберете оператора</h2>
-            {operatorsList.map(t => <Link href='/paymentPage'>
-                <OperatorItem key={t.id} title={t.title}/>
-            </Link>)}
+            <ul>
+                {operatorsList.map(t =>
+                    <li key={t.id}>
+                        <Link href={`operators/${t.path}`}>
+                            <OperatorItem title={t.title}/>
+                        </Link>
+                    </li>
+                )}
+            </ul>
         </div>
     )
 }
