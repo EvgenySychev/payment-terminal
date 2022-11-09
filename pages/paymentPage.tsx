@@ -1,4 +1,6 @@
 import OperatorItem from '../components/OperatorItem'
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
 
 type PaymentPagePropsType = {
     key:number
@@ -10,7 +12,11 @@ const PaymentPage = ({ key,title }: PaymentPagePropsType) => {
     return <>
     <OperatorItem key={key} title={'title'}/>
         <div>
-            <input type="text" name="" id=""/>
+            <PhoneInput
+                country={'ru'}
+                preferredCountries={['ru']}
+                inputProps={{}}
+            />
             <input type="text" name="" id=""/>
             <button>Оплатить</button>
         </div>
