@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import OperatorItem from '../components/OperatorItem'
 
-import logoMts from '../public/MTS.jpg';
-import logoBeeline from '../public/beeline.jpg';
-import logoMegafon from '../public/megafon.jpg';
+import logoMts from '../public/MTS.png';
+import logoBeeline from '../public/beeline.png';
+import logoMegafon from '../public/megafon.png';
 
 type Operator = {
     id: number
@@ -17,19 +17,19 @@ const operatorsList: Array<Operator> = [
         id: 1,
         title: 'МТС',
         path: 'mts',
-        logo:logoMts
+        logo: logoMts
     },
     {
         id: 2,
         title: 'Билайн',
         path: 'beeline',
-        logo:logoBeeline
+        logo: logoBeeline
     },
     {
         id: 3,
         title: 'Мегафон',
         path: 'megafon',
-        logo:logoMegafon
+        logo: logoMegafon
     }
 ]
 

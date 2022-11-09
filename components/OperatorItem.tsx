@@ -7,10 +7,10 @@ type OperatorItemPropsType = {
 
 const OperatorItem = ({title,logo}: OperatorItemPropsType) => {
     return <>
-        <div>
-            {title}
-        </div>
         <Image alt="operator" src={logo}/>
+        <p>
+            {title}
+        </p>
     </>
 }
 

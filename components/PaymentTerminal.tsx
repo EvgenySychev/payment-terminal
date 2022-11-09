@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import {useRouter} from "next/router";
-//import InputMask from 'react-input-mask';
+import InputMask from 'react-input-mask';
 import {useFormik} from "formik";
 import {ChangeEvent} from "react";
 
@@ -27,15 +27,15 @@ const PaymentTerminal = () => {
         validate: (values) => {
             const errors: FormikErrorType = {};
             if (!values.phoneNumber) {
-                errors.phoneNumber = 'Обязательно тел';
+                errors.phoneNumber = 'Введите номер телефона';
             } else if (values.phoneNumber.length < 11) {
                 errors.phoneNumber = 'Неверный формат номера';
             }
 
             if (!values.amountMoney) {
-                errors.amountMoney = 'Обязательно сум';
+                errors.amountMoney = 'Введите номер сумму';
             } else if (Number(values.amountMoney) < 1) {
-                errors.amountMoney = 'Сумма может быть больше 0 ₽';
+                errors.amountMoney = 'Сумма должна быть больше 0 ₽';
             } else if (Number(values.amountMoney) > 1000) {
                 errors.amountMoney = 'Сумма не может быть больше 1000 ₽';
             }
@@ -50,14 +50,11 @@ const PaymentTerminal = () => {
     return <>
         <form onSubmit={formik.handleSubmit}>
             <div>
-                <input
-                    placeholder={'+7 (...) ... - .. - .. '}
-                    {...formik.getFieldProps("phoneNumber")}
-                />
-                {/*<InputMask mask="+7(999)999-99-99" maskChar=" "
+                <InputMask mask="+7(999)999-99-99" maskChar=" "
+                           pattern={'^((8|\\+7)[\\- ]?)?\\(?([9]{1})\\(?([0-9]{2})\\)?[\\- ]?\\d{1}[\\- ]?\\d{1}[\\- ]?\\d{1}[\\- ]?\\d{1}[\\- ]?\\d{1}(([\\- ]?\\d{1})?[\\- ]?\\d{1})?$'}
                            placeholder="+7(900)123-45-67"
                            required
-                           {...formik.getFieldProps("phoneNumber")}/>*/}
+                           {...formik.getFieldProps("phoneNumber")}/>
             </div>
             {formik.touched.phoneNumber && formik.errors.phoneNumber ?
                 <div style={{color: 'red'}}>{formik.errors.phoneNumber}</div> : null}
