@@ -1,18 +1,27 @@
 import {useRouter} from "next/router";
 import Button from '../../components/styledComponents/Button'
+import {useEffect} from "react";
+import PaymentResultPage from '../../components/styledComponents/PaymentResultPage'
+
 
 const PaymentSuccsess = () => {
 
     const router = useRouter()
 
-    const onHomePageReturn = () => {
-        router.push('/')
-    }
+    useEffect(() => {
+        setTimeout(() => {
+            router.push('/')
+        }, 3000)
+    }, [router])
 
-    return <div>
-        Оплата успешно совершена
-        <Button title="На главную" onClick={onHomePageReturn}/>
-    </div>
+    return <PaymentResultPage>
+        <h2>
+            Оплата совершена успешно!
+        </h2>
+        <p>
+            перехожу на главную страницу...
+        </p>
+    </PaymentResultPage>
 }
 
 export default PaymentSuccsess;

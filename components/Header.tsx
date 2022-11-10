@@ -1,27 +1,25 @@
-//import styled from 'styled-components'
+import styled from 'styled-components'
 
-import style from './Header.module.css'
-
-/*const StyledHeader = styled.header`
+const StyledHeader = styled.header`
+  display: flex;
   width: 100%;
-  height: 70px;
-  background-color: darkkhaki;
-  text-align: center;
-`*/
+  height: 50px;
+  
+  justify-content: center;
+`
 
 const Header = (props: any) => {
-    
-    return <div className={style.header}>
-        <div className={style.description}>
-            Терминал оплаты сотовой связи
-        </div>
-    </div>
 
-    // return <StyledHeader {...props}>
-    //     <div>
-    //         HEADER
-    //     </div>
-    // </StyledHeader>
+    return <StyledHeader {...props}>
+        <span style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            fontSize: "16px"
+        }}>
+            Терминал оплаты сотовой связи
+        </span>
+    </StyledHeader>
 }
 
 export default Header;

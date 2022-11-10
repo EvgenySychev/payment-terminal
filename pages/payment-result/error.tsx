@@ -1,6 +1,6 @@
 import {useRouter} from "next/router";
 import Button from '../../components/styledComponents/Button'
-import PaymentResultPage from '../../components/PaymentResultPage'
+import PaymentResultPage from '../../components/styledComponents/PaymentResultPage'
 
 const PaymentError = () => {
 

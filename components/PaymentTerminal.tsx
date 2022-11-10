@@ -44,7 +44,7 @@ const PaymentTerminal = ({responceApi}: PaymentTerminalPropsType) => {
         },
         validate: (values) => {
             const errors: FormikErrorType = {};
-            
+
             if (!values.phoneNumber) {
                 errors.phoneNumber = 'Введите номер телефона';
             } else if (values.phoneNumber.length < 11) {
@@ -58,7 +58,7 @@ const PaymentTerminal = ({responceApi}: PaymentTerminalPropsType) => {
             } else if (Number(values.amountMoney) > 1000) {
                 errors.amountMoney = 'Сумма не может быть больше 1000 ₽';
             }
-            
+
             return errors;
         },
         onSubmit: values => {
@@ -67,7 +67,11 @@ const PaymentTerminal = ({responceApi}: PaymentTerminalPropsType) => {
         }
     })
 
-    return <div className={style.PaymentTerminal}>
+    return <div style={{
+        height: "300px",
+        width: "100%",
+        minWidth: "200px"
+    }}>
         <Form onSubmit={formik.handleSubmit}>
             <Span>Введите номер телефона</Span>
             <div style={divPaymentTerminalForm}>

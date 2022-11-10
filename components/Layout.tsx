@@ -1,35 +1,25 @@
 import Header from './Header'
 import Footer from './Footer'
 import styled from 'styled-components'
-//
-// const AppWraper = styled.div`
-//   background-color: aquamarine;
-// `
+
+const AppWraper = styled.div`
+  background-color: aquamarine;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center
+`
 
 const Layout = ({children, ...props}: any) => {
 
-    return <div style={{
-        backgroundColor: "aquamarine",
-        height:"98vh",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        alignItems: "center"
-    }}>
+    return <AppWraper>
         <Header/>
         {
             children
         }
         <Footer/>
-    </div>
-
-
-    // return <AppWraper>
-    //     <Header/>
-    //     {children}
-    //     <Footer/>
-    // </AppWraper>
-
+    </AppWraper>
 }
 
 export default Layout;

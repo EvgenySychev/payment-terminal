@@ -4,7 +4,6 @@ import OperatorItem from '../components/OperatorItem'
 import logoMts from '../public/MTS.png';
 import logoBeeline from '../public/beeline.png';
 import logoMegafon from '../public/megafon.png';
-import Flex from '../components/Flex'
 import style from '../styles/homePage.module.css'
 
 
