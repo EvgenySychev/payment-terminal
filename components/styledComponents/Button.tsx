@@ -1,13 +1,12 @@
-import {useRouter} from "next/router";
 import styled from 'styled-components'
 
 type ButtonType = {
     title:string
-    onClick: ()=> void
+    onClick?: ()=> void
 }
 
 const StyledButton = styled.button`
-  color: red;
+  color: darkslateblue;
   margin: 10px;
   height: 40px;
   font-size: 16px;

@@ -1,5 +1,6 @@
 import {useRouter} from "next/router";
-import Button from '../../components/Button'
+import Button from '../../components/styledComponents/Button'
+import PaymentResultPage from '../../components/PaymentResultPage'
 
 const PaymentError = () => {
 
@@ -13,17 +14,7 @@ const PaymentError = () => {
         router.back()
     }
 
-    return <div style={{
-        height: "400px",
-        width: "50%",
-        minWidth: "250px",
-        borderRadius: "10px",
-        backgroundColor: "white",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center"
-    }}>
+    return <PaymentResultPage>
         <h2>
             Ой!..
         </h2>
@@ -34,7 +25,7 @@ const PaymentError = () => {
             <Button title="На главную" onClick={onHomePageReturn}/>
             <Button title="Попробовать ещё раз" onClick={onTerminalPageReturn}/>
         </div>
-    </div>
+    </PaymentResultPage>
 }
 
 export default PaymentError;

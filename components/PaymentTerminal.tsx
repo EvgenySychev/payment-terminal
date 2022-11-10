@@ -8,6 +8,10 @@ import {ChangeEvent} from "react";
 import {Data} from '../pages/api/responce'
 import {useEffect, useState} from "react";
 import style from './PaymentTerminal.module.css'
+import Button from './styledComponents/Button'
+import Form from './styledComponents/Form'
+import Input from './styledComponents/Input'
+import Span from './styledComponents/Span'
 
 type FormikErrorType = {
     phoneNumber?: string
@@ -24,6 +28,11 @@ const PaymentTerminal = ({responceApi}: PaymentTerminalPropsType) => {
 
     console.log(responceApi.result)
 
+    const divPaymentTerminalForm = {
+        paddingTop: "10px",
+        paddingBottom: "10px",
+    }
+
     const openResultPage = () => {
         router.push(`/payment-result/${responceApi.result}`)
     }
@@ -35,6 +44,7 @@ const PaymentTerminal = ({responceApi}: PaymentTerminalPropsType) => {
         },
         validate: (values) => {
             const errors: FormikErrorType = {};
+            
             if (!values.phoneNumber) {
                 errors.phoneNumber = 'Введите номер телефона';
             } else if (values.phoneNumber.length < 11) {
@@ -48,6 +58,7 @@ const PaymentTerminal = ({responceApi}: PaymentTerminalPropsType) => {
             } else if (Number(values.amountMoney) > 1000) {
                 errors.amountMoney = 'Сумма не может быть больше 1000 ₽';
             }
+            
             return errors;
         },
         onSubmit: values => {
@@ -57,38 +68,48 @@ const PaymentTerminal = ({responceApi}: PaymentTerminalPropsType) => {
     })
 
     return <div className={style.PaymentTerminal}>
-        <form onSubmit={formik.handleSubmit} className={style.PaymentTerminalForm}>
-            <span>Введите номер телефона</span>
-            <div>
-                <InputMask mask="+7(999)999-99-99" maskChar=" "
-                           pattern={'^((8|\\+7)[\\- ]?)?\\(?([9]{1})\\(?([0-9]{2})\\)?[\\- ]?\\d{1}[\\- ]?\\d{1}[\\- ]?\\d{1}[\\- ]?\\d{1}[\\- ]?\\d{1}(([\\- ]?\\d{1})?[\\- ]?\\d{1})?$'}
-                           placeholder="+7(900)123-45-67"
-                           required
-                           {...formik.getFieldProps("phoneNumber")}/>
+        <Form onSubmit={formik.handleSubmit}>
+            <Span>Введите номер телефона</Span>
+            <div style={divPaymentTerminalForm}>
+                <InputMask
+                    style={{
+                        width: "200px",
+                        minWidth: "196px",
+                        padding: "0",
+                        margin: "0",
+                        height: "40px",
+                        fontSize: "20px",
+                        textAlign: "center"
+                    }}
+                    mask="+7(999)999-99-99" maskChar=" "
+                    pattern={'^((8|\\+7)[\\- ]?)?\\(?([9]{1})\\(?([0-9]{2})\\)?[\\- ]?\\d{1}[\\- ]?\\d{1}[\\- ]?\\d{1}[\\- ]?\\d{1}[\\- ]?\\d{1}(([\\- ]?\\d{1})?[\\- ]?\\d{1})?$'}
+                    placeholder="+7(900)123-45-67"
+                    required
+                    {...formik.getFieldProps("phoneNumber")}/>
             </div>
-            <span>
+            <Span>
                 {formik.touched.phoneNumber && formik.errors.phoneNumber ?
-                    <span
-                        style={{color: 'red'}}>{formik.errors.phoneNumber}</span> : null}
-            </span>
-            <span>Введите сумму</span>
-            <div>
-                <input
+                    <Span
+                        style={{color: 'red'}}>{formik.errors.phoneNumber}</Span> : null}
+            </Span>
+            <Span>Введите сумму</Span>
+            <div style={divPaymentTerminalForm}>
+                <Input
                     placeholder={'от 1 до 1000 рублей'}
                     maxLength={4}
                     minLength={1}
                     required
                     {...formik.getFieldProps("amountMoney")}/>
             </div>
-            <span>
+            <Span>
                 {formik.touched.amountMoney && formik.errors.amountMoney ?
-                    <span
-                        style={{color: 'red'}}>{formik.errors.amountMoney}</span> : null}
-            </span>
-            <div>
-                <button type="submit">Оплатить</button>
+                    <Span
+                        style={{color: 'red'}}>{formik.errors.amountMoney}</Span> : null}
+            </Span>
+            <div style={divPaymentTerminalForm}>
+                <Button title="Оплатить"/>
             </div>
-        </form>
+        </Form>
     </div>
 }
 
