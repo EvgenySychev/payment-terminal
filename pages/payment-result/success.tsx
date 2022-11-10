@@ -1,5 +1,6 @@
 import {useRouter} from "next/router";
 import Button from '../../components/styledComponents/Button'
+import Display from '../../components/styledComponents/Display'
 import {useEffect} from "react";
 import PaymentResultPage from '../../components/styledComponents/PaymentResultPage'
 
@@ -15,16 +16,14 @@ const PaymentSuccsess = () => {
     }, [router])
 
     return <PaymentResultPage>
-        <h2 style={{paddingLeft: "10px",
-            paddingRight: "10px",
-            textAlign: "center"}}>
+        <Display>
+        <h2>
             Оплата совершена успешно!
         </h2>
-        <p style={{paddingLeft: "10px",
-            paddingRight: "10px",
-            textAlign: "center"}}>
+        <p>
             перехожу на главную страницу...
         </p>
+        </Display>
     </PaymentResultPage>
 }
 
