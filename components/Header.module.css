@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: darkkhaki;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

@@ -1,9 +1,12 @@
 import Link from 'next/link'
-import { StaticImageData } from 'next/image'
+import {StaticImageData} from 'next/image'
 import OperatorItem from '../components/OperatorItem'
 import logoMts from '../public/MTS.png';
 import logoBeeline from '../public/beeline.png';
 import logoMegafon from '../public/megafon.png';
+import Flex from '../components/Flex'
+import style from '../styles/homePage.module.css'
+
 
 type OperatorItemType = {
     id: number
@@ -36,18 +39,19 @@ const operatorsList: Array<OperatorItemType> = [
 const HomePage = () => {
 
     return (
-        <div>
-            <h2>Выберете оператора</h2>
-            <ul>
+        <>
+            <h4 style={{textAlign: "center", height: "80px", fontSize: "30px"}}>Для оплаты
+                выбирете оператора</h4>
+            <div className={style.body}>
                 {operatorsList.map(t =>
-                    <li key={t.id}>
+                    <div key={t.id}>
                         <Link href={`operators/${t.path}`}>
                             <OperatorItem title={t.title} logo={t.logo}/>
                         </Link>
-                    </li>
+                    </div>
                 )}
-            </ul>
-        </div>
+            </div>
+        </>
     )
 }
 

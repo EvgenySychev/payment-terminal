@@ -7,6 +7,7 @@ import {useFormik} from "formik";
 import {ChangeEvent} from "react";
 import {Data} from '../pages/api/responce'
 import {useEffect, useState} from "react";
+import style from './PaymentTerminal.module.css'
 
 type FormikErrorType = {
     phoneNumber?: string
@@ -14,10 +15,10 @@ type FormikErrorType = {
 }
 
 type PaymentTerminalPropsType = {
-    responceApi: {result:string}
+    responceApi: { result: string }
 }
 
-const PaymentTerminal = ({responceApi}:PaymentTerminalPropsType) => {
+const PaymentTerminal = ({responceApi}: PaymentTerminalPropsType) => {
 
     const router = useRouter()
 
@@ -55,8 +56,9 @@ const PaymentTerminal = ({responceApi}:PaymentTerminalPropsType) => {
         }
     })
 
-    return <>
-        <form onSubmit={formik.handleSubmit}>
+    return <div className={style.PaymentTerminal}>
+        <form onSubmit={formik.handleSubmit} className={style.PaymentTerminalForm}>
+            <span>Введите номер телефона</span>
             <div>
                 <InputMask mask="+7(999)999-99-99" maskChar=" "
                            pattern={'^((8|\\+7)[\\- ]?)?\\(?([9]{1})\\(?([0-9]{2})\\)?[\\- ]?\\d{1}[\\- ]?\\d{1}[\\- ]?\\d{1}[\\- ]?\\d{1}[\\- ]?\\d{1}(([\\- ]?\\d{1})?[\\- ]?\\d{1})?$'}
@@ -64,8 +66,12 @@ const PaymentTerminal = ({responceApi}:PaymentTerminalPropsType) => {
                            required
                            {...formik.getFieldProps("phoneNumber")}/>
             </div>
-            {formik.touched.phoneNumber && formik.errors.phoneNumber ?
-                <div style={{color: 'red'}}>{formik.errors.phoneNumber}</div> : null}
+            <span>
+                {formik.touched.phoneNumber && formik.errors.phoneNumber ?
+                    <span
+                        style={{color: 'red'}}>{formik.errors.phoneNumber}</span> : null}
+            </span>
+            <span>Введите сумму</span>
             <div>
                 <input
                     placeholder={'от 1 до 1000 рублей'}
@@ -74,13 +80,16 @@ const PaymentTerminal = ({responceApi}:PaymentTerminalPropsType) => {
                     required
                     {...formik.getFieldProps("amountMoney")}/>
             </div>
-            {formik.touched.amountMoney && formik.errors.amountMoney ?
-                <div style={{color: 'red'}}>{formik.errors.amountMoney}</div> : null}
+            <span>
+                {formik.touched.amountMoney && formik.errors.amountMoney ?
+                    <span
+                        style={{color: 'red'}}>{formik.errors.amountMoney}</span> : null}
+            </span>
             <div>
                 <button type="submit">Оплатить</button>
             </div>
         </form>
-    </>
+    </div>
 }
 
 export default PaymentTerminal;

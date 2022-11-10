@@ -1,5 +1,5 @@
 import PaymentTerminal from '../../components/PaymentTerminal'
-import OperatorItem from '../../components/OperatorItem'
+import OperatorItemSmall from '../../components/OperatorItemSmall'
 import logoBeeline from '../../public/beeline.png';
 
 export const getServerSideProps = async () => {
@@ -17,14 +17,24 @@ export const getServerSideProps = async () => {
     }
 }
 
-const BeelainPage = ({responceApi}:any) => {
+const BeelainPage = ({responceApi}: any) => {
 
     console.log(responceApi)
 
-    return <>
-        <OperatorItem title="" logo={logoBeeline}/>
+    return <div style={{
+        height: "600px",
+        width: "30%",
+        minWidth: "250px",
+        borderRadius: "10px",
+        backgroundColor: "white",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center"
+    }}>
+        <OperatorItemSmall title="Билайн" logo={logoBeeline}/>
         <PaymentTerminal responceApi={responceApi}/>
-    </>
+    </div>
 }
 
 export default BeelainPage

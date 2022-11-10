@@ -1,0 +1,25 @@
+.OperatorItem {
+    height: 200px;
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+    background-color: bisque;
+    border-radius: 14px;
+}
+
+.OperatorItem:hover {
+    background-color: cadetblue;
+}
+
+.OperatorItem img {
+    border-radius: 80px;
+    height: 150px;
+    width: 150px;
+}
+
+.OperatorItem p {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}

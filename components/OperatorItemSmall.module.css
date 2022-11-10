@@ -1,0 +1,24 @@
+.OperatorItem {
+    height: 100px;
+    width: 200px;
+    margin: 15px;
+    padding: 15px;
+    background-color: bisque;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.OperatorItem img {
+    border-radius: 80px;
+    height: 100px;
+    width: 100px;
+}
+
+.OperatorItem p {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    text-align: center;
+}

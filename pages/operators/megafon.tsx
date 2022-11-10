@@ -1,5 +1,5 @@
 import PaymentTerminal from '../../components/PaymentTerminal'
-import OperatorItem from '../../components/OperatorItem'
+import OperatorItemSmall from '../../components/OperatorItemSmall'
 import logoMegafon from '../../public/megafon.png';
 
 export const getServerSideProps = async () => {
@@ -17,11 +17,21 @@ export const getServerSideProps = async () => {
     }
 }
 
-const MegafonPage = ({responceApi}:any) => {
-    return <>
-        <OperatorItem title="" logo={logoMegafon}/>
+const MegafonPage = ({responceApi}: any) => {
+    return <div style={{
+        height: "600px",
+        width: "30%",
+        minWidth: "250px",
+        borderRadius: "10px",
+        backgroundColor: "white",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center"
+    }}>
+        <OperatorItemSmall title="Мегафон" logo={logoMegafon}/>
         <PaymentTerminal responceApi={responceApi}/>
-    </>
+    </div>
 }
 
 export default MegafonPage

@@ -1,19 +1,19 @@
 import Image from 'next/image';
 import {StaticImageData} from 'next/image'
-import style from './OperatorItem.module.css'
+import style from './OperatorItemSmall.module.css'
 
 type OperatorItemPropsType = {
     title: string
     logo: StaticImageData
 }
 
-const OperatorItem = ({title, logo}: OperatorItemPropsType) => {
+const OperatorItemSmall = ({title, logo}: OperatorItemPropsType) => {
     return <div className={style.OperatorItem}>
-        <Image alt="operator" src={logo} width={150} height={150}/>
+        <Image alt="operator" src={logo} width={50} height={50}/>
         <p>
             {title}
         </p>
     </div>
 }
 
-export default OperatorItem;
+export default OperatorItemSmall;
