@@ -3,7 +3,7 @@ import s from './FooterContacts.module.css'
 export const FooterContacts = () => {
 
     return (
-        <div style={{marginTop: "30px",fontSize: "13px", textAlign:"center"}}>
+        <div style={{marginTop: "20px",fontSize: "13px", textAlign:"center"}}>
             Created by
             <b> Evgeny Sychev</b>
             <div className={s.socials}>

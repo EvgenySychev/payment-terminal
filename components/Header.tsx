@@ -4,7 +4,7 @@ const StyledHeader = styled.header`
   display: flex;
   width: 100%;
   height: 50px;
-  
+  color: darkslateblue;
   justify-content: center;
 `
 

@@ -4,7 +4,8 @@ import OperatorItem from '../components/OperatorItem'
 import logoMts from '../public/MTS.png';
 import logoBeeline from '../public/beeline.png';
 import logoMegafon from '../public/megafon.png';
-import style from '../styles/homePage.module.css'
+import style from '../styles/homePage.module.css';
+import TextHeader from '../components/styledComponents/TextHeader'
 
 
 type OperatorItemType = {
@@ -39,8 +40,7 @@ const HomePage = () => {
 
     return (
         <>
-            <h4 style={{textAlign: "center", height: "80px", fontSize: "30px"}}>Для оплаты
-                выбирете оператора</h4>
+            <TextHeader>Для оплаты выбирете оператора</TextHeader>
             <div className={style.body}>
                 {operatorsList.map(t =>
                     <div key={t.id}>

@@ -5,10 +5,12 @@
     padding: 15px;
     background-color: bisque;
     border-radius: 14px;
+    cursor: pointer;
 }
 
 .OperatorItem:hover {
     background-color: cadetblue;
+    transition: 0.75s;
 }
 
 .OperatorItem img {

@@ -12,6 +12,7 @@ const StyledButton = styled.button`
   font-size: 16px;
   font-weight: 600;
   width: 200px;
+  cursor: pointer;
 `
 
 const Button = ({title,onClick,...props}:any) => {

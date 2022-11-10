@@ -5,9 +5,10 @@ import { FooterContacts } from './FooterContact'
 const StyledFoter = styled.footer`
   display: flex;
   width: 100%;
-  height: 150px;
+  height: 120px;
   background-color: gray;
   justify-content: space-around;
+  color: darkslateblue;
 `
 
 const Footer = (props: any) => {

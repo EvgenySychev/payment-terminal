@@ -3,12 +3,13 @@ import Footer from './Footer'
 import styled from 'styled-components'
 
 const AppWraper = styled.div`
-  background-color: aquamarine;
+  background-color: lightblue;
   height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
+  font-family: "Poppins", sans-serif
 `
 
 const Layout = ({children, ...props}: any) => {

@@ -94,7 +94,7 @@ const PaymentTerminal = ({responceApi}: PaymentTerminalPropsType) => {
             <Span>
                 {formik.touched.phoneNumber && formik.errors.phoneNumber ?
                     <Span
-                        style={{color: 'red'}}>{formik.errors.phoneNumber}</Span> : null}
+                        style={{color: 'darkred'}}>{formik.errors.phoneNumber}</Span> : null}
             </Span>
             <Span>Введите сумму</Span>
             <div style={divPaymentTerminalForm}>
@@ -108,7 +108,7 @@ const PaymentTerminal = ({responceApi}: PaymentTerminalPropsType) => {
             <Span>
                 {formik.touched.amountMoney && formik.errors.amountMoney ?
                     <Span
-                        style={{color: 'red'}}>{formik.errors.amountMoney}</Span> : null}
+                        style={{color: 'darkred'}}>{formik.errors.amountMoney}</Span> : null}
             </Span>
             <div style={divPaymentTerminalForm}>
                 <Button title="Оплатить"/>
