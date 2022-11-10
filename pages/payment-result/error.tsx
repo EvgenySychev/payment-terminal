@@ -1,5 +1,5 @@
 import {useRouter} from "next/router";
-import HomePageReturnButton from '../../components/HomePageReturnButton'
+import Button from '../../components/Button'
 
 const PaymentError = () => {
 
@@ -9,14 +9,14 @@ const PaymentError = () => {
         router.push('/')
     }
 
-    const onPageTerminalReturn = () => {
+    const onTerminalPageReturn = () => {
         router.back()
     }
     
   return <div>
       Ой!.. оплата не удалась, попробуйте ещё раз
-      <HomePageReturnButton/>
-      <button onClick={onPageTerminalReturn}>Попробовать ещё раз</button>
+      <Button title="На главную" onClick={onHomePageReturn}/>
+      <Button title="Попробовать ещё раз" onClick={onTerminalPageReturn}/>
   </div>
 }
 

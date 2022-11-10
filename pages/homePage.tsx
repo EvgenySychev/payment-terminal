@@ -35,8 +35,6 @@ const operatorsList: Array<OperatorItemType> = [
 
 const HomePage = () => {
 
-    console.log()
-
     return (
         <div>
             <h2>Выберете оператора</h2>

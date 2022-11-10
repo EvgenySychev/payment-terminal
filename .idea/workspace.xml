@@ -1,11 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fc93140-97b1-4efe-8bc0-a81542a031c9" name="Changes" comment="" />
+    <list default="true" id="5fc93140-97b1-4efe-8bc0-a81542a031c9" name="Changes" comment="added .env">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomePageReturnButton.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/homePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/homePage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/payment-result/error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/payment-result/error.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="0b9aa56e78b3b0359ac3ca50f0754a744b18d521" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HIW4OmryviTitXGhQZw7Do5LiY" />
   <component name="ProjectViewState">
@@ -18,7 +53,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\it-kamasutra\payment-terminal\pages\payment-result" />
+      <recent name="I:\it-kamasutra\payment-terminal\pages" />
+      <recent name="I:\it-kamasutra\payment-terminal\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\it-kamasutra\payment-terminal\pages\operators" />
+      <recent name="I:\it-kamasutra\payment-terminal\components" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -28,11 +76,187 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667972885897</updated>
-      <workItem from="1667972887062" duration="307000" />
+      <workItem from="1667972887062" duration="415000" />
+      <workItem from="1667973324210" duration="129000" />
+      <workItem from="1667973455469" duration="103000" />
+      <workItem from="1667973586198" duration="26203000" />
+      <workItem from="1668007813796" duration="1729000" />
+      <workItem from="1668009588497" duration="7092000" />
+      <workItem from="1668054765464" duration="11408000" />
+      <workItem from="1668066724370" duration="1288000" />
     </task>
+    <task id="LOCAL-00001" summary="added homePage, 404, OperatorItem.">
+      <created>1667977002644</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667977002644</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added paymentPage">
+      <created>1667978906583</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667978906583</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added router to HomePage after 3sec.">
+      <created>1667979485727</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667979485727</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added Layout.tsx">
+      <created>1667980271493</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667980271493</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added react-phone-input-2">
+      <created>1667984448520</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1667984448520</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added PhoneInput in paymentPage.tsx">
+      <created>1667985860687</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667985860687</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added react-currency-input-field">
+      <created>1667986180462</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1667986180462</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added CurrencyInput in paymentPage.tsx">
+      <created>1667987471939</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1667987471939</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added formik">
+      <created>1667987508456</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667987508456</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added validation without a mask">
+      <created>1667990067360</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667990067360</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added operator pages">
+      <created>1667998616158</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667998616158</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added payment result pages">
+      <created>1667999658124</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1667999658124</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added HomePageReturnButton.tsx">
+      <created>1668000919467</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668000919467</updated>
+    </task>
+    <task id="LOCAL-00014" summary="added HomePageReturnButton.tsx">
+      <created>1668000927251</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668000927251</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added logo">
+      <created>1668011596011</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668011596011</updated>
+    </task>
+    <task id="LOCAL-00016" summary="the application logic is ready">
+      <created>1668020099455</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668020099455</updated>
+    </task>
+    <task id="LOCAL-00017" summary="the application logic and API is ready">
+      <created>1668064814687</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1668064814687</updated>
+    </task>
+    <task id="LOCAL-00018" summary="the application logic and API is ready">
+      <created>1668064824229</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668064824229</updated>
+    </task>
+    <task id="LOCAL-00019" summary="added .env">
+      <created>1668065533359</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1668065533359</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added homePage, 404, OperatorItem." />
+    <MESSAGE value="added paymentPage" />
+    <MESSAGE value="added router to HomePage after 3sec." />
+    <MESSAGE value="added Layout.tsx" />
+    <MESSAGE value="added react-phone-input-2" />
+    <MESSAGE value="added PhoneInput in paymentPage.tsx" />
+    <MESSAGE value="added react-currency-input-field" />
+    <MESSAGE value="added CurrencyInput in paymentPage.tsx" />
+    <MESSAGE value="added formik" />
+    <MESSAGE value="added validation without a mask" />
+    <MESSAGE value="added operator pages" />
+    <MESSAGE value="added payment result pages" />
+    <MESSAGE value="added HomePageReturnButton.tsx" />
+    <MESSAGE value="added logo" />
+    <MESSAGE value="the application logic is ready" />
+    <MESSAGE value="the application logic and API is ready" />
+    <MESSAGE value="added .env" />
+    <option name="LAST_COMMIT_MESSAGE" value="added .env" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

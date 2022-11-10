@@ -1,13 +1,18 @@
-
 import {useRouter} from "next/router";
-import HomePageReturnButton from '../../components/HomePageReturnButton'
+import Button from '../../components/Button'
 
 const PaymentSuccsess = () => {
 
-  return <div>
-      Оплата успешно совершена
-      <HomePageReturnButton/>
-  </div>
+    const router = useRouter()
+
+    const onHomePageReturn = () => {
+        router.push('/')
+    }
+
+    return <div>
+        Оплата успешно совершена
+        <Button title="На главную" onClick={onHomePageReturn}/>
+    </div>
 }
 
 export default PaymentSuccsess;
