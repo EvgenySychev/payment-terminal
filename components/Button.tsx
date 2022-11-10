@@ -7,7 +7,12 @@ type ButtonType = {
 }
 
 const StyledButton = styled.button`
-color: darkblue;
+  color: red;
+  margin: 10px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 200px;
 `
 
 const Button = ({title,onClick,...props}:any) => {

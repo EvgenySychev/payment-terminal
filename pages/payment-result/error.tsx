@@ -12,12 +12,29 @@ const PaymentError = () => {
     const onTerminalPageReturn = () => {
         router.back()
     }
-    
-  return <div>
-      Ой!.. оплата не удалась, попробуйте ещё раз
-      <Button title="На главную" onClick={onHomePageReturn}/>
-      <Button title="Попробовать ещё раз" onClick={onTerminalPageReturn}/>
-  </div>
+
+    return <div style={{
+        height: "400px",
+        width: "50%",
+        minWidth: "250px",
+        borderRadius: "10px",
+        backgroundColor: "white",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center"
+    }}>
+        <h2>
+            Ой!..
+        </h2>
+        <p>
+            оплата не удалась, попробуйте ещё раз
+        </p>
+        <div>
+            <Button title="На главную" onClick={onHomePageReturn}/>
+            <Button title="Попробовать ещё раз" onClick={onTerminalPageReturn}/>
+        </div>
+    </div>
 }
 
 export default PaymentError;
