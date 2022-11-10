@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const AppWraper = styled.div`
   background-color: lightblue;
-  height: 98vh;
+  min-height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

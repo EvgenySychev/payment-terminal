@@ -13,6 +13,12 @@ const StyledButton = styled.button`
   font-weight: 600;
   width: 200px;
   cursor: pointer;
+  border-radius: 15px;
+  &:hover {
+    background-color: gainsboro;
+    border-color: darkslateblue;
+    border-width: 3px
+  }
 `
 
 const Button = ({title,onClick,...props}:any) => {

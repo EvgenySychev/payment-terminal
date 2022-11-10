@@ -19,7 +19,7 @@ const Footer = (props: any) => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
-            fontSize: "16px"
+            fontSize: "14px"
         }}>
             Приложение предназначено для тетсирования функционала оплаты сотовой связи
         </span>

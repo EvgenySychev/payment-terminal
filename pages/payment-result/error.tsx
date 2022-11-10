@@ -15,13 +15,18 @@ const PaymentError = () => {
     }
 
     return <PaymentResultPage>
-        <h2>
+        <h2 style={{paddingLeft: "10px",
+            paddingRight: "10px",
+            textAlign: "center"}}>
             Ой!..
         </h2>
-        <p>
+        <p style={{paddingLeft: "10px",
+            paddingRight: "10px",
+            textAlign: "center"}}>
             оплата не удалась, попробуйте ещё раз
         </p>
-        <div>
+        <div style={{display: "flex",
+            flexDirection: "column"}}>
             <Button title="На главную" onClick={onHomePageReturn}/>
             <Button title="Попробовать ещё раз" onClick={onTerminalPageReturn}/>
         </div>

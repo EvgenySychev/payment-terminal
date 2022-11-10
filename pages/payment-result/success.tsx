@@ -15,10 +15,14 @@ const PaymentSuccsess = () => {
     }, [router])
 
     return <PaymentResultPage>
-        <h2>
+        <h2 style={{paddingLeft: "10px",
+            paddingRight: "10px",
+            textAlign: "center"}}>
             Оплата совершена успешно!
         </h2>
-        <p>
+        <p style={{paddingLeft: "10px",
+            paddingRight: "10px",
+            textAlign: "center"}}>
             перехожу на главную страницу...
         </p>
     </PaymentResultPage>

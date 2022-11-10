@@ -29,9 +29,9 @@
 
 
 .socials a:hover {
-    border: 1px solid #68e0cf;
+    border: 1px solid darkslateblue;
 }
 
 .socials a:hover span {
-    color: #68e0cf;
+    color: darkslateblue;
 }

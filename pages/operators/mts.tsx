@@ -19,7 +19,7 @@ export const getServerSideProps = async () => {
 
 const MtsPage = ({responceApi}: any) => {
     return <div style={{
-        height: "600px",
+        height: "500px",
         width: "30%",
         minWidth: "250px",
         borderRadius: "10px",
