@@ -1,5 +1,8 @@
 import Link from 'next/link'
+import { StaticImageData } from 'next/image'
 import OperatorItem from '../components/OperatorItem'
+
+
 
 import logoMts from '../public/MTS.png';
 import logoBeeline from '../public/beeline.png';
@@ -9,7 +12,7 @@ type Operator = {
     id: number
     title: string
     path: string
-    logo:string
+    logo: StaticImageData
 }
 
 const operatorsList: Array<Operator> = [
@@ -34,6 +37,8 @@ const operatorsList: Array<Operator> = [
 ]
 
 const HomePage = () => {
+
+    console.log()
 
     return (
         <div>

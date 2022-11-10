@@ -4,19 +4,26 @@ import {useRouter} from "next/router";
 import InputMask from 'react-input-mask';
 import {useFormik} from "formik";
 import {ChangeEvent} from "react";
+import {Data} from '../pages/api/responce'
+import {useEffect, useState} from "react";
 
 type FormikErrorType = {
     phoneNumber?: string
     amountMoney?: string
 }
 
-const PaymentTerminal = () => {
+type PaymentTerminalPropsType = {
+    responceApi: {result:string}
+}
+
+const PaymentTerminal = ({responceApi}:PaymentTerminalPropsType) => {
 
     const router = useRouter()
 
+    console.log(responceApi.result)
+
     const openResultPage = () => {
-        // router.push('/payment-result/success')
-        router.push('/payment-result/error')
+        router.push(`/payment-result/${responceApi.result}`)
     }
 
     const formik = useFormik({
