@@ -1,21 +1,18 @@
 import Link from 'next/link'
 import { StaticImageData } from 'next/image'
 import OperatorItem from '../components/OperatorItem'
-
-
-
 import logoMts from '../public/MTS.png';
 import logoBeeline from '../public/beeline.png';
 import logoMegafon from '../public/megafon.png';
 
-type Operator = {
+type OperatorItemType = {
     id: number
     title: string
     path: string
     logo: StaticImageData
 }
 
-const operatorsList: Array<Operator> = [
+const operatorsList: Array<OperatorItemType> = [
     {
         id: 1,
         title: 'МТС',

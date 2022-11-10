@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import {useRouter} from "next/router";
+// @ts-ignore
 import InputMask from 'react-input-mask';
 import {useFormik} from "formik";
 import {ChangeEvent} from "react";

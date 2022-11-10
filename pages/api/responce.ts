@@ -1,16 +1,19 @@
 import {responce} from './data/responce'
-import type { NextApiRequest, NextApiResponse } from 'next'
+import type {NextApiRequest, NextApiResponse} from 'next'
 
 export type Data = typeof getRandomResponce
 
-const getRandomResponce = (responce:any) => {
+const getRandomResponce = (responce: any) => {
 
-  return responce[Math.floor(Math.random() * responce.length)];
+    return responce[Math.floor(Math.random() * responce.length)];
 }
 
 export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>
+    req: NextApiRequest,
+    res: NextApiResponse<Data>
 ) {
-  res.status(200).json(getRandomResponce(responce))
+
+    if (req.method === 'GET') {
+        res.status(200).json(getRandomResponce(responce))
+    }
 }

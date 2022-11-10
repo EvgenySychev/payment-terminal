@@ -3,7 +3,7 @@ import OperatorItem from '../../components/OperatorItem'
 import logoMegafon from '../../public/megafon.png';
 
 export const getServerSideProps = async () => {
-    const responce = await fetch('http://localhost:3000/api/responce/')
+    const responce = await fetch(`${process.env.API_HOST}/responce`)
     const data = await responce.json()
 
     if (!data) {
