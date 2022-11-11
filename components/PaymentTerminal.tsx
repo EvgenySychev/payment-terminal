@@ -1,13 +1,13 @@
 import Link from 'next/link'
 
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
+import { useFormik } from "formik";
+import { ChangeEvent } from "react";
+import { useState } from "react";
+
 // @ts-ignore
 import InputMask from 'react-input-mask';
-import {useFormik} from "formik";
-import {ChangeEvent} from "react";
-import {Data} from '../pages/api/responce'
-import {useEffect, useState} from "react";
-import style from './PaymentTerminal.module.css'
+
 import Button from './styledComponents/Button'
 import Form from './styledComponents/Form'
 import Input from './styledComponents/Input'
@@ -25,7 +25,7 @@ const PaymentTerminal = () => {
 
     const fetchData = async () => {
         try {
-            const req = await fetch('http://localhost:3000/api/responce');
+            const req = await fetch('http://localhost:3000/api/response');
             const newData = await req.json();
             console.log(newData.result) //оставил, чтобы можно было посмотреть какой ответ пришел с сервера
 
