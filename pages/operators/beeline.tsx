@@ -1,6 +1,6 @@
 import PaymentTerminal from '../../components/PaymentTerminal'
 import OperatorItemSmall from '../../components/OperatorItemSmall'
-import logoBeeline from '../../public/beeline.ico';
+import logoBeeline from '../../public/beeline.png';
 import OperatorPageWraper from '../../components/styledComponents/OperatorPageWraper'
 
 const BeelainPage = () => {
