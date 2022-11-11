@@ -1,6 +1,6 @@
 import PaymentTerminal from '../../components/PaymentTerminal'
 import OperatorItemSmall from '../../components/OperatorItemSmall'
-import logoMts from '../../public/MTS.png';
+import logoMts from '../../public/MTS.ico';
 import OperatorPageWraper from '../../components/styledComponents/OperatorPageWraper'
 
 const MtsPage = () => {

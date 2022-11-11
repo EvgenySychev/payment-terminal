@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fc93140-97b1-4efe-8bc0-a81542a031c9" name="Changes" comment="added .env">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Button.tsx" afterDir="false" />
+    <list default="true" id="5fc93140-97b1-4efe-8bc0-a81542a031c9" name="Changes" comment="added try catch">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomePageReturnButton.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/homePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/homePage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/payment-result/error.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/payment-result/error.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/operators/beeline.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/operators/beeline.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/operators/megafon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/operators/megafon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/operators/mts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/operators/mts.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="CSS File" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
@@ -26,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="0b9aa56e78b3b0359ac3ca50f0754a744b18d521" />
+        <entry key="$PROJECT_DIR$" value="5aeacceec3282a2a2413ace571134dbdc4e84a26" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,21 +50,85 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\it-kamasutra\payment-terminal\components\styledComponents" />
+      <recent name="I:\it-kamasutra\payment-terminal\components" />
       <recent name="I:\it-kamasutra\payment-terminal\pages\payment-result" />
       <recent name="I:\it-kamasutra\payment-terminal\pages" />
-      <recent name="I:\it-kamasutra\payment-terminal\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="I:\it-kamasutra\payment-terminal\components\styledComponents" />
       <recent name="I:\it-kamasutra\payment-terminal\pages\operators" />
       <recent name="I:\it-kamasutra\payment-terminal\components" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="predeploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="predeploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.predeploy" />
+        <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -83,7 +145,13 @@
       <workItem from="1668007813796" duration="1729000" />
       <workItem from="1668009588497" duration="7092000" />
       <workItem from="1668054765464" duration="11408000" />
-      <workItem from="1668066724370" duration="1288000" />
+      <workItem from="1668066724370" duration="3997000" />
+      <workItem from="1668070745527" duration="11525000" />
+      <workItem from="1668083155890" duration="16128000" />
+      <workItem from="1668141277030" duration="3494000" />
+      <workItem from="1668144802514" duration="196000" />
+      <workItem from="1668188216430" duration="1183000" />
+      <workItem from="1668189413429" duration="2653000" />
     </task>
     <task id="LOCAL-00001" summary="added homePage, 404, OperatorItem.">
       <created>1667977002644</created>
@@ -218,7 +286,84 @@
       <option name="project" value="LOCAL" />
       <updated>1668065533359</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="added styled Button">
+      <created>1668068322271</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1668068322271</updated>
+    </task>
+    <task id="LOCAL-00021" summary="added styles">
+      <created>1668081741703</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1668081741703</updated>
+    </task>
+    <task id="LOCAL-00022" summary="added Button styles">
+      <created>1668083064807</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1668083064807</updated>
+    </task>
+    <task id="LOCAL-00023" summary="refactor styled component">
+      <created>1668086557999</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1668086557999</updated>
+    </task>
+    <task id="LOCAL-00024" summary="refactor styled component Header, Footer, homePage">
+      <created>1668091372565</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1668091372565</updated>
+    </task>
+    <task id="LOCAL-00025" summary="refactor styles">
+      <created>1668095045034</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1668095045034</updated>
+    </task>
+    <task id="LOCAL-00026" summary="added adaptive for 360 px screen">
+      <created>1668107461504</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1668107461504</updated>
+    </task>
+    <task id="LOCAL-00027" summary="refactor error.tsx success.tsx">
+      <created>1668108770793</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1668108770793</updated>
+    </task>
+    <task id="LOCAL-00028" summary="fix PaymentTerminal">
+      <created>1668144956088</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1668144956088</updated>
+    </task>
+    <task id="LOCAL-00029" summary="added gh-pages">
+      <created>1668189342051</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1668189342051</updated>
+    </task>
+    <task id="LOCAL-00030" summary="added try catch">
+      <created>1668191104937</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1668191104937</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,9 +381,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added homePage, 404, OperatorItem." />
-    <MESSAGE value="added paymentPage" />
-    <MESSAGE value="added router to HomePage after 3sec." />
     <MESSAGE value="added Layout.tsx" />
     <MESSAGE value="added react-phone-input-2" />
     <MESSAGE value="added PhoneInput in paymentPage.tsx" />
@@ -253,7 +395,29 @@
     <MESSAGE value="the application logic is ready" />
     <MESSAGE value="the application logic and API is ready" />
     <MESSAGE value="added .env" />
-    <option name="LAST_COMMIT_MESSAGE" value="added .env" />
+    <MESSAGE value="added styled Button" />
+    <MESSAGE value="added styles" />
+    <MESSAGE value="added Button styles" />
+    <MESSAGE value="refactor styled component" />
+    <MESSAGE value="refactor styled component Header, Footer, homePage" />
+    <MESSAGE value="refactor styles" />
+    <MESSAGE value="added adaptive for 360 px screen" />
+    <MESSAGE value="refactor error.tsx success.tsx" />
+    <MESSAGE value="fix PaymentTerminal" />
+    <MESSAGE value="added gh-pages" />
+    <MESSAGE value="added try catch" />
+    <option name="LAST_COMMIT_MESSAGE" value="added try catch" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/styledComponents/OperatorPageWraper.tsx</url>
+          <line>10</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
