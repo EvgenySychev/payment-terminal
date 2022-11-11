@@ -1,5 +1,5 @@
-import style from './Footer.module.css'
 import styled from 'styled-components'
+
 import { FooterContacts } from './FooterContact'
 
 const StyledFoter = styled.footer`

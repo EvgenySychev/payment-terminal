@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fc93140-97b1-4efe-8bc0-a81542a031c9" name="Changes" comment="added try catch">
+    <list default="true" id="5fc93140-97b1-4efe-8bc0-a81542a031c9" name="Changes" comment="refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/operators/beeline.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/operators/beeline.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/operators/megafon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/operators/megafon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/operators/mts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/operators/mts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PaymentTerminal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PaymentTerminal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/data/responce.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/data/response.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/responce.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/response.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
       <recent name="I:\it-kamasutra\payment-terminal\components" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.build">
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -381,7 +381,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added Layout.tsx" />
     <MESSAGE value="added react-phone-input-2" />
     <MESSAGE value="added PhoneInput in paymentPage.tsx" />
     <MESSAGE value="added react-currency-input-field" />
@@ -406,7 +405,8 @@
     <MESSAGE value="fix PaymentTerminal" />
     <MESSAGE value="added gh-pages" />
     <MESSAGE value="added try catch" />
-    <option name="LAST_COMMIT_MESSAGE" value="added try catch" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

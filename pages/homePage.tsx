@@ -1,11 +1,14 @@
 import Link from 'next/link'
-import {StaticImageData} from 'next/image'
+
+import { StaticImageData } from 'next/image'
+
 import OperatorItem from '../components/OperatorItem'
 import logoMts from '../public/MTS.png';
 import logoBeeline from '../public/beeline.png';
 import logoMegafon from '../public/megafon.png';
-import style from '../styles/homePage.module.css';
 import TextHeader from '../components/styledComponents/TextHeader'
+
+import style from '../styles/homePage.module.css';
 
 
 type OperatorItemType = {

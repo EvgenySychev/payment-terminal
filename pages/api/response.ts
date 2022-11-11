@@ -1,5 +1,5 @@
-import {response} from './data/response'
-import type {NextApiRequest, NextApiResponse} from 'next'
+import { response } from './data/response'
+import type { NextApiRequest, NextApiResponse } from 'next'
 
 export type Data = {
     result: string

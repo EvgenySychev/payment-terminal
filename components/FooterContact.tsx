@@ -1,4 +1,4 @@
-import s from './FooterContacts.module.css'
+import style from './FooterContacts.module.css'
 
 type contactsType = {
     id: number
@@ -30,7 +30,7 @@ export const FooterContacts = () => {
         <div style={{marginTop: "20px", fontSize: "13px", textAlign: "center"}}>
             Created by
             <b> Evgeny Sychev</b>
-            <div className={s.socials}>
+            <div className={style.socials}>
                 {contacts.map(c => <div key={c.id}>
                     <a href={c.link}
                        target="_blank">

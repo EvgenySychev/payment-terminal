@@ -1,4 +1,5 @@
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
+
 import Button from '../../components/styledComponents/Button'
 import Display from '../../components/styledComponents/Display'
 import PaymentResultPage from '../../components/styledComponents/PaymentResultPage'

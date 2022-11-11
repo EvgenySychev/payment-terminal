@@ -1,9 +1,10 @@
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
+
+import { useEffect } from "react";
+
 import Button from '../../components/styledComponents/Button'
 import Display from '../../components/styledComponents/Display'
-import {useEffect} from "react";
 import PaymentResultPage from '../../components/styledComponents/PaymentResultPage'
-
 
 const PaymentSuccsess = () => {
 
