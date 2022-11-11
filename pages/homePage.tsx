@@ -2,6 +2,9 @@ import Link from 'next/link'
 
 import { StaticImageData } from 'next/image'
 
+import { useRouter } from "next/router";
+import { useState } from "react";
+
 import OperatorItem from '../components/OperatorItem'
 // import logoMts from '../public/MTS.png';
 // import logoBeeline from '../public/beeline.png';
@@ -38,6 +41,26 @@ const operatorsList: OperatorItemType[] = [
 
     }
 ]
+//
+// const router = useRouter()
+// const [data, setData] = useState(null);
+//
+// const fetchData = async () => {
+//     try {
+//         const req = await fetch(`${process.env.API_HOST}/response`);
+//         const newData = await req.json();
+//         console.log(newData.result) //оставил, чтобы можно было посмотреть какой ответ пришел с сервера
+//
+//         if (newData) {
+//             setData(newData.results)
+//             router.push(`/payment-result/${newData.result}`)
+//             console.log(newData.result)
+//         }
+//     }
+//     catch {
+//         console.log('some error')
+//     }
+// };
 
 const HomePage = () => {
 

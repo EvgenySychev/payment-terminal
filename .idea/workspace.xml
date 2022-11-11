@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fc93140-97b1-4efe-8bc0-a81542a031c9" name="Changes" comment="refactor">
+    <list default="true" id="5fc93140-97b1-4efe-8bc0-a81542a031c9" name="Changes" comment="added https://payment-terminal-brave.vercel.app/">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PaymentTerminal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PaymentTerminal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/data/responce.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/data/response.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/api/responce.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pages/api/response.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/homePage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/homePage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="5aeacceec3282a2a2413ace571134dbdc4e84a26" />
+        <entry key="$PROJECT_DIR$" value="73a2275aa881d5a28fb51bf35ebdf0183724f3ce" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TODOLIST-TS" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
@@ -122,9 +120,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
         <item itemvalue="npm.predeploy" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.deploy" />
         <item itemvalue="npm.build" />
       </list>
@@ -363,7 +361,49 @@
       <option name="project" value="LOCAL" />
       <updated>1668191104937</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="added type in api\response">
+      <created>1668194055260</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1668194055260</updated>
+    </task>
+    <task id="LOCAL-00032" summary="delete unused imports">
+      <created>1668194432120</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1668194432120</updated>
+    </task>
+    <task id="LOCAL-00033" summary="delete unused file">
+      <created>1668195483408</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1668195483408</updated>
+    </task>
+    <task id="LOCAL-00034" summary="delete images">
+      <created>1668197574416</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1668197574416</updated>
+    </task>
+    <task id="LOCAL-00035" summary="delete images">
+      <created>1668197694941</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1668197694941</updated>
+    </task>
+    <task id="LOCAL-00036" summary="added https://payment-terminal-brave.vercel.app/">
+      <created>1668198007114</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1668198007114</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,11 +421,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added react-phone-input-2" />
-    <MESSAGE value="added PhoneInput in paymentPage.tsx" />
-    <MESSAGE value="added react-currency-input-field" />
-    <MESSAGE value="added CurrencyInput in paymentPage.tsx" />
-    <MESSAGE value="added formik" />
     <MESSAGE value="added validation without a mask" />
     <MESSAGE value="added operator pages" />
     <MESSAGE value="added payment result pages" />
@@ -406,7 +441,12 @@
     <MESSAGE value="added gh-pages" />
     <MESSAGE value="added try catch" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="added type in api\response" />
+    <MESSAGE value="delete unused imports" />
+    <MESSAGE value="delete unused file" />
+    <MESSAGE value="delete images" />
+    <MESSAGE value="added https://payment-terminal-brave.vercel.app/" />
+    <option name="LAST_COMMIT_MESSAGE" value="added https://payment-terminal-brave.vercel.app/" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
