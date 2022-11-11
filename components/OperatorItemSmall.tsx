@@ -11,7 +11,6 @@ type OperatorItemPropsType = {
 
 const OperatorItemSmall = ({title, logo}: OperatorItemPropsType) => {
     return <div className={style.OperatorItem}>
-        {/*<Image alt="operator" src={logo} width={50} height={50}/>*/}
         <p>
             {title}
         </p>
