@@ -6,12 +6,12 @@ import style from './OperatorItem.module.css'
 
 type OperatorItemPropsType = {
     title: string
-    logo: StaticImageData
+    logo?: StaticImageData
 }
 
 const OperatorItem = ({title, logo}: OperatorItemPropsType) => {
     return <div className={style.OperatorItem}>
-        <Image alt="operator" src={logo} width={150} height={150}/>
+        {/*<Image alt="operator" src={logo} width={150} height={150}/>*/}
         <p>
             {title}
         </p>
