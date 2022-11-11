@@ -68,7 +68,9 @@ const PaymentTerminal = () => {
             } else if (Number(values.amountMoney) < 1) {
                 errors.amountMoney = 'Сумма должна быть больше 0 ₽';
             } else if (Number(values.amountMoney) > 1000) {
-                errors.amountMoney = 'Сумма не может быть больше 1000 ₽';
+                errors.amountMoney = 'Сумма должна быть меньше 1000 ₽';
+            } else if (/^\d+$/.test(values.amountMoney)) {
+                errors.amountMoney = 'Введите только цифры';
             }
 
             return errors;
