@@ -25,7 +25,7 @@ const PaymentTerminal = () => {
 
     const fetchData = async () => {
         try {
-            const req = await fetch('http://localhost:3000/api/response');
+            const req = await fetch('https://payment-terminal-brave.vercel.app/response');
             const newData = await req.json();
             console.log(newData.result) //оставил, чтобы можно было посмотреть какой ответ пришел с сервера
 
