@@ -24,14 +24,19 @@ const PaymentTerminal = () => {
     const [data, setData] = useState(null);
 
     const fetchData = async () => {
-        const req = await fetch('http://localhost:3000/api/responce');
-        const newData = await req.json();
-        console.log(newData.result) //оставил, чтобы можно было посмотреть какой ответ пришел с сервера
+        try {
+            const req = await fetch('http://localhost:3000/api/responce');
+            const newData = await req.json();
+            console.log(newData.result) //оставил, чтобы можно было посмотреть какой ответ пришел с сервера
 
-        if (newData) {
-            setData(newData.results)
-            router.push(`/payment-result/${newData.result}`)
-            console.log(newData.result)
+            if (newData) {
+                setData(newData.results)
+                router.push(`/payment-result/${newData.result}`)
+                console.log(newData.result)
+            }
+        } 
+        catch {
+            console.log('some error')
         }
     };
 
