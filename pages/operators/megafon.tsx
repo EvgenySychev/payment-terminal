@@ -1,37 +1,14 @@
 import PaymentTerminal from '../../components/PaymentTerminal'
 import OperatorItemSmall from '../../components/OperatorItemSmall'
 import logoMegafon from '../../public/megafon.png';
+import OperatorPageWraper from '../../components/styledComponents/OperatorPageWraper'
 
-export const getServerSideProps = async () => {
-    const responce = await fetch(`${process.env.API_HOST}/responce`)
-    const data = await responce.json()
+const MegafonPage = () => {
 
-    if (!data) {
-        return {
-            notFound: true
-        }
-    }
-
-    return {
-        props: {responceApi: data},
-    }
-}
-
-const MegafonPage = ({responceApi}: any) => {
-    return <div style={{
-        height: "500px",
-        width: "30%",
-        minWidth: "250px",
-        borderRadius: "10px",
-        backgroundColor: "white",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center"
-    }}>
+    return <OperatorPageWraper>
         <OperatorItemSmall title="Мегафон" logo={logoMegafon}/>
-        <PaymentTerminal responceApi={responceApi}/>
-    </div>
+        <PaymentTerminal/>
+    </OperatorPageWraper>
 }
 
 export default MegafonPage

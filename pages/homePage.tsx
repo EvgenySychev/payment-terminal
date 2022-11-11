@@ -15,7 +15,7 @@ type OperatorItemType = {
     logo: StaticImageData
 }
 
-const operatorsList: Array<OperatorItemType> = [
+const operatorsList: OperatorItemType[] = [
     {
         id: 1,
         title: 'МТС',

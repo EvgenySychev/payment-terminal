@@ -18,15 +18,22 @@ type FormikErrorType = {
     amountMoney?: string
 }
 
-type PaymentTerminalPropsType = {
-    responceApi: { result: string }
-}
-
-const PaymentTerminal = ({responceApi}: PaymentTerminalPropsType) => {
+const PaymentTerminal = () => {
 
     const router = useRouter()
+    const [data, setData] = useState(null);
 
-    console.log(responceApi.result)
+    const fetchData = async () => {
+        const req = await fetch('http://localhost:3000/api/responce');
+        const newData = await req.json();
+        console.log(newData.result) //оставил, чтобы можно было посмотреть какой ответ пришел с сервера
+
+        if (newData) {
+            setData(newData.results)
+            router.push(`/payment-result/${newData.result}`)
+            console.log(newData.result)
+        }
+    };
 
     const divPaymentTerminalForm = {
         paddingTop: "10px",
@@ -34,7 +41,7 @@ const PaymentTerminal = ({responceApi}: PaymentTerminalPropsType) => {
     }
 
     const openResultPage = () => {
-        router.push(`/payment-result/${responceApi.result}`)
+
     }
 
     const formik = useFormik({
@@ -63,7 +70,7 @@ const PaymentTerminal = ({responceApi}: PaymentTerminalPropsType) => {
         },
         onSubmit: values => {
             formik.resetForm()
-            openResultPage()
+            fetchData()
         }
     })
 
@@ -111,7 +118,7 @@ const PaymentTerminal = ({responceApi}: PaymentTerminalPropsType) => {
                         style={{color: 'darkred'}}>{formik.errors.amountMoney}</Span> : null}
             </Span>
             <div style={divPaymentTerminalForm}>
-                <Button title="Оплатить"/>
+                <Button title="Оплатить" type="submit"/>
             </div>
         </Form>
     </div>
