@@ -56,6 +56,7 @@ const PaymentTerminal = () => {
         },
         validate: (values) => {
             const errors: FormikErrorType = {};
+            const validNumbers = /^\d+$/.test(values.amountMoney)
 
             if (!values.phoneNumber) {
                 errors.phoneNumber = 'Введите номер телефона';
@@ -69,7 +70,7 @@ const PaymentTerminal = () => {
                 errors.amountMoney = 'Сумма должна быть больше 0 ₽';
             } else if (Number(values.amountMoney) > 1000) {
                 errors.amountMoney = 'Сумма должна быть меньше 1000 ₽';
-            } else if (/^\d+$/.test(values.amountMoney)) {
+            } else if (!validNumbers) {
                 errors.amountMoney = 'Введите только цифры';
             }
 
