@@ -25,7 +25,7 @@ const PaymentTerminal = () => {
 
     const fetchData = async () => {
         try {
-            const req = await fetch(`${process.env.API_HOST}/response`);
+            const req = await fetch(`${process.env.API_HOST}/api/response`);
             const newData = await req.json();
             console.log(newData.result) //оставил, чтобы можно было посмотреть какой ответ пришел с сервера
 
