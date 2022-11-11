@@ -3,9 +3,9 @@ import Link from 'next/link'
 import { StaticImageData } from 'next/image'
 
 import OperatorItem from '../components/OperatorItem'
-import logoMts from '../public/MTS.png';
-import logoBeeline from '../public/beeline.png';
-import logoMegafon from '../public/megafon.png';
+// import logoMts from '../public/MTS.png';
+// import logoBeeline from '../public/beeline.png';
+// import logoMegafon from '../public/megafon.png';
 import TextHeader from '../components/styledComponents/TextHeader'
 
 import style from '../styles/homePage.module.css';
@@ -15,7 +15,7 @@ type OperatorItemType = {
     id: number
     title: string
     path: string
-    logo: StaticImageData
+    logo?: StaticImageData
 }
 
 const operatorsList: OperatorItemType[] = [
@@ -23,19 +23,19 @@ const operatorsList: OperatorItemType[] = [
         id: 1,
         title: 'МТС',
         path: 'mts',
-        logo: logoMts
+
     },
     {
         id: 2,
         title: 'Билайн',
         path: 'beeline',
-        logo: logoBeeline
+
     },
     {
         id: 3,
         title: 'Мегафон',
         path: 'megafon',
-        logo: logoMegafon
+
     }
 ]
 
@@ -48,7 +48,7 @@ const HomePage = () => {
                 {operatorsList.map(t =>
                     <div key={t.id}>
                         <Link href={`operators/${t.path}`}>
-                            <OperatorItem title={t.title} logo={t.logo}/>
+                            <OperatorItem title={t.title} />
                         </Link>
                     </div>
                 )}
